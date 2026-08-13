@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Details - Full-stack Developer Portfolio">
+    <title>Project Details | DevPortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hacker-style.css">
+</head>
+<body>
+    <div class="dot-grid"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="hacker-contact.html" class="nav-icon" aria-label="Contact">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/>
+                </svg>
+            </a>
+
+            <div class="nav-pill">
+                <a href="hacker-index.html" class="nav-link" data-page="home">
+                    <span class="bracket">[</span>Gallery<span class="bracket">]</span>
+                </a>
+                <a href="hacker-about.html" class="nav-link" data-page="about">
+                    <span class="bracket">[</span>About<span class="bracket">]</span>
+                </a>
+                <a href="hacker-contact.html" class="nav-link" data-page="contact">
+                    <span class="bracket">[</span>Contact<span class="bracket">]</span>
+                </a>
+                <a href="#help" class="nav-link" data-page="help">
+                    <span class="bracket">[</span>Help<span class="bracket">]</span>
+                </a>
+            </div>
+
+            <div class="profile-avatar">
+                <div class="avatar-circle">LY</div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="project-detail">
+            <!-- Header -->
+            <div class="detail-header">
+                <h1 class="detail-title">Autonomous Carbon-Aware Manufacturing Genome</h1>
+                <p class="detail-subtitle">AI-powered manufacturing intelligence platform</p>
+                <div class="detail-tags">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">FastAPI</span>
+                    <span class="tech-badge">Machine Learning</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">REST API</span>
+                </div>
+            </div>
+
+            <!-- Project Image/Screenshot -->
+            <div class="project-screenshot">
+                <div class="screenshot-placeholder">
+                    <div class="placeholder-content">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
+                        </svg>
+                        <p>ACMGS Platform Screenshot</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Preview Terminal -->
+            <div class="terminal-panel">
+                <div class="terminal-header">
+                    <div class="terminal-title">
+                        <span class="bracket">&gt;</span> code_overview.py
+                    </div>
+                    <div class="terminal-buttons">
+                        <div class="button-dot"></div>
+                        <div class="button-dot"></div>
+                        <div class="button-dot"></div>
+                    </div>
+                </div>
+                <div class="terminal-body">
+                    <div class="code-line"><span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI</div>
+                    <div class="code-line"><span class="keyword">from</span> ml_models <span class="keyword">import</span> AnomalyDetector</div>
+                    <div class="code-line"></div>
+                    <div class="code-line">app = <span class="function">FastAPI</span>()</div>
+                    <div class="code-line">detector = <span class="function">AnomalyDetector</span>()</div>
+                    <div class="code-line"></div>
+                    <div class="code-line"><span class="decorator">@app.post</span>(<span class="string">"/analyze"</span>)</div>
+                    <div class="code-line"><span class="keyword">async def</span> <span class="function">analyze_batch</span>(data: dict):</div>
+                    <div class="code-line">    results = detector.<span class="function">predict</span>(data)</div>
+                    <div class="code-line">    <span class="keyword">return</span> {<span class="string">"anomalies"</span>: results}</div>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="detail-content">
+                <h2 class="detail-section-title">
+                    <span class="bracket">&lt;</span>Overview<span class="bracket">&gt;</span>
+                </h2>
+                <p class="detail-text">
+                    Developed a comprehensive AI-powered manufacturing monitoring and anomaly detection system. The system leverages a knowledge graph architecture to analyze industrial batch data in real-time and identify deviations. Built robust REST APIs using FastAPI for seamless data visualization and actionable insights.
+                </p>
+
+                <h2 class="detail-section-title">
+                    <span class="bracket">&lt;</span>Key Features<span class="bracket">&gt;</span>
+                </h2>
+                <ul class="feature-list">
+                    <li><span class="bullet">→</span> Real-time manufacturing process monitoring and data streaming</li>
+                    <li><span class="bullet">→</span> Knowledge graph-based anomaly detection using advanced ML algorithms</li>
+                    <li><span class="bullet">→</span> Batch-level data analysis with statistical insights</li>
+                    <li><span class="bullet">→</span> Interactive REST API for third-party integrations</li>
+                    <li><span class="bullet">→</span> Production optimization recommendations</li>
+                </ul>
+
+                <h2 class="detail-section-title">
+                    <span class="bracket">&lt;</span>Technologies Used<span class="bracket">&gt;</span>
+                </h2>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <div class="tech-name">Python</div>
+                        <div class="tech-role">Core Language</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-name">FastAPI</div>
+                        <div class="tech-role">API Framework</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-name">Scikit-learn</div>
+                        <div class="tech-role">ML Library</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-name">PostgreSQL</div>
+                        <div class="tech-role">Database</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-name">NumPy/Pandas</div>
+                        <div class="tech-role">Data Processing</div>
+                    </div>
+                    <div class="tech-item">
+                        <div class="tech-name">Docker</div>
+                        <div class="tech-role">Deployment</div>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="detail-cta">
+                    <a href="#" class="cta-button primary-cta">
+                        <span class="bracket-left">&lt;</span> Live Demo <span class="bracket-right">/&gt;</span>
+                    </a>
+                    <a href="#" class="cta-button secondary-cta">
+                        <span class="bracket-left">[</span> GitHub Repo <span class="bracket-right">]</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">
+            <span class="bracket">&lt;/&gt;</span> 
+            Built with passion & code | © 2026 Lavlesh Yadav
+            <span class="bracket">&lt;/&gt;</span>
+        </p>
+    </footer>
+
+    <script src="hacker-script.js"></script>
+</body>
+</html>

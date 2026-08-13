@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developer Portfolio - Full-stack engineer specializing in AI, ML, and Backend Development">
+    <meta name="keywords" content="developer, portfolio, AI, machine learning, backend">
+    <title>Lavlesh Yadav - Developer Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hacker-style.css">
+</head>
+<body>
+    <!-- Dot grid background -->
+    <div class="dot-grid"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Mail Icon Left -->
+            <a href="hacker-contact.html" class="nav-icon" aria-label="Contact">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/>
+                </svg>
+            </a>
+
+            <!-- Pill Navigation Bar -->
+            <div class="nav-pill">
+                <a href="hacker-index.html" class="nav-link active" data-page="home">
+                    <span class="bracket">[</span>Gallery<span class="bracket">]</span>
+                </a>
+                <a href="hacker-about.html" class="nav-link" data-page="about">
+                    <span class="bracket">[</span>About<span class="bracket">]</span>
+                </a>
+                <a href="hacker-contact.html" class="nav-link" data-page="contact">
+                    <span class="bracket">[</span>Contact<span class="bracket">]</span>
+                </a>
+                <a href="#help" class="nav-link" data-page="help">
+                    <span class="bracket">[</span>Help<span class="bracket">]</span>
+                </a>
+            </div>
+
+            <!-- Profile Avatar Right -->
+            <div class="profile-avatar">
+                <div class="avatar-circle">LY</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <!-- Left: Text with accent panel -->
+                <div class="hero-left">
+                    <div class="accent-panel">
+                        <h1 class="hero-title">
+                            <span class="cursor">_</span>
+                            <span class="text-line">Hello! I am <br><span class="highlight-text ">Lavlesh Yadav</span><br> and I am a <span class="glow-text">Full-Stack Developer</span>.</span>
+                        </h1>
+                        <p class="hero-intro">
+                            Crafting elegant solutions to complex problems. Specializing in AI/ML systems, scalable backends, and data-driven applications.
+                        </p>
+                        <a href="hacker-projects.html" class="cta-button primary-cta">
+                            <span class="bracket-left">&lt;</span> View Portfolio <span class="bracket-right">/&gt;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Floating tech stack with glowing blob -->
+                <div class="hero-right">
+                    <div class="glowing-blob"></div>
+                    <div class="tech-stack">
+                        <div class="tech-icon python" title="Python">
+                            <span>Py</span>
+                        </div>
+                        <div class="tech-icon fastapi" title="FastAPI">
+                            <span>API</span>
+                        </div>
+                        <div class="tech-icon ml" title="Machine Learning">
+                            <span>ML</span>
+                        </div>
+                        <div class="tech-icon react" title="React">
+                            <span>⚛</span>
+                        </div>
+                        <div class="tech-icon sql" title="SQL">
+                            <span>DB</span>
+                        </div>
+                        <div class="tech-icon ai" title="AI">
+                            <span>AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Technologies</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Certifications</div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Preview -->
+        <section class="featured-section">
+            <h2 class="section-heading">
+                <span class="bracket">&lt;</span>Featured Work<span class="bracket">&gt;</span>
+            </h2>
+            
+            <div class="featured-cards">
+                <article class="featured-card">
+                    <div class="card-header">
+                        <div class="card-icon">🤖</div>
+                        <h3>ACMGS</h3>
+                    </div>
+                    <p class="card-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">ML</span>
+                    </p>
+                    <p class="card-description">AI-powered manufacturing intelligence platform with anomaly detection.</p>
+                    <a href="hacker-project-detail.html?id=acmgs" class="card-link">
+                        <span class="arrow">→</span> View Project
+                    </a>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-header">
+                        <div class="card-icon">🧠</div>
+                        <h3>HAR</h3>
+                    </div>
+                    <p class="card-tech">
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">LSTM</span>
+                        <span class="tech-badge">CNN</span>
+                    </p>
+                    <p class="card-description">Deep learning model for human activity recognition using sensor data.</p>
+                    <a href="hacker-project-detail.html?id=har" class="card-link">
+                        <span class="arrow">→</span> View Project
+                    </a>
+                </article>
+
+                <article class="featured-card">
+                    <div class="card-header">
+                        <div class="card-icon">📧</div>
+                        <h3>Spam Detector</h3>
+                    </div>
+                    <p class="card-tech">
+                        <span class="tech-badge">Scikit-learn</span>
+                        <span class="tech-badge">NLP</span>
+                        <span class="tech-badge">ML</span>
+                    </p>
+                    <p class="card-description">Machine learning classifier for email spam detection with high accuracy.</p>
+                    <a href="hacker-project-detail.html?id=spam" class="card-link">
+                        <span class="arrow">→</span> View Project
+                    </a>
+                </article>
+            </div>
+
+            <div class="cta-row">
+                <a href="hacker-projects.html" class="cta-button secondary-cta">
+                    <span class="bracket-left">[</span> View All Projects <span class="bracket-right">]</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Preview -->
+        <section class="skills-preview">
+            <h2 class="section-heading">
+                <span class="bracket">&lt;</span>Core Skills<span class="bracket">&gt;</span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">FastAPI</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">ML/AI</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">SQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-text">
+            <span class="bracket">&lt;/&gt;</span> 
+            Built with passion & code | © 2026 Lavlesh Yadav
+            <span class="bracket">&lt;/&gt;</span>
+        </p>
+    </footer>
+
+    <script src="hacker-script.js"></script>
+</body>
+</html>
