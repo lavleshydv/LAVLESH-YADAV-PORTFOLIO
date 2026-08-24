@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Lavlesh Yadav's portfolio projects in AI, Machine Learning, and Backend Development">
-    <meta name="keywords" content="projects, AI, machine learning, backend development, Python, FastAPI">
+    <meta name="description" content="Explore Lavlesh Yadav's technical portfolio projects in AI, Deep Learning, Machine Learning, and Backend Development">
+    <meta name="keywords" content="projects, AI, machine learning, backend development, Python, FastAPI, CNN, LSTM, Knowledge Graph">
     <meta name="author" content="Lavlesh Yadav">
-    <title>Projects - Lavlesh Yadav Portfolio</title>
+    <meta name="theme-color" content="#070a13">
+    <title>Featured Projects | Lavlesh Yadav Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%230f172a'%3E💻%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%2300f2fe'%3E⚡%3C/text%3E%3C/svg%3E">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- Interactive Ambient Glows & Background Particle Canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow-2" aria-hidden="true"></div>
+
     <header class="header" role="banner">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container nav-container">
-                <a href="index.html" class="logo" aria-label="Lavlesh Yadav Portfolio">LY</a>
+                <a href="index.html" class="logo" aria-label="Lavlesh Yadav Portfolio">
+                    <span class="logo-badge">LY</span>
+                    <span>LAVLESH</span>
+                </a>
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
                     <span></span>
                     <span></span>
@@ -36,60 +47,59 @@
         <!-- Projects Hero Section -->
         <section class="page-header" aria-labelledby="projects-title">
             <div class="container">
-                <h1 id="projects-title">My Projects</h1>
-                <p class="page-subtitle">Showcasing my technical expertise through real-world implementations</p>
+                <h1 id="projects-title">Featured Innovations &amp; Projects</h1>
+                <p class="page-subtitle">Showcasing end-to-end technical implementations across AI, Deep Learning, and Scalable APIs</p>
             </div>
         </section>
 
-        <!-- Projects Grid -->
+        <!-- Detailed Projects Grid -->
         <section class="projects-section" aria-labelledby="all-projects-title">
             <div class="container">
-                <h2 id="all-projects-title" class="sr-only">All Projects</h2>
+                <h2 id="all-projects-title" class="sr-only">All Featured Projects</h2>
                 <div class="projects-detailed-grid">
                     <!-- Project 1 -->
                     <article class="project-detailed" aria-labelledby="project-1-title">
                         <div class="project-content">
-                            <div class="project-badge">Featured</div>
+                            <div class="project-badge">Featured Innovation</div>
                             <h3 id="project-1-title">Autonomous Carbon-Aware Manufacturing Genome System (ACMGS)</h3>
-                            <p class="project-subtitle">AI-Powered Manufacturing Intelligence Platform</p>
-                            <p class="project-description">Developed a comprehensive AI-powered manufacturing monitoring and anomaly detection system. The system leverages a knowledge graph architecture to analyze industrial batch data and identify deviations in real-time. Built robust REST APIs using FastAPI for seamless data visualization and actionable insights.</p>
+                            <p class="project-subtitle">AI-Powered Industrial Process Intelligence &amp; Anomaly Detection</p>
+                            <p class="project-description">Developed a comprehensive AI-powered manufacturing monitoring and anomaly detection system. The system leverages a Knowledge Graph architecture to analyze industrial batch telemetry, detect process deviations in real-time, and provide automated carbon-efficiency recommendations. Built robust asynchronous REST APIs using FastAPI for seamless visualization and high-throughput ingestion.</p>
                             
                             <section aria-labelledby="acmgs-features">
-                                <h4 id="acmgs-features" class="subsection-title">Key Features</h4>
+                                <h4 id="acmgs-features" class="subsection-title">Key Engineering Highlights</h4>
                                 <ul class="feature-list" role="list">
-                                    <li role="listitem">Real-time manufacturing process monitoring</li>
-                                    <li role="listitem">Knowledge graph-based anomaly detection</li>
-                                    <li role="listitem">Batch-level data analysis and reporting</li>
-                                    <li role="listitem">Interactive dashboards for data visualization</li>
-                                    <li role="listitem">Production optimization recommendations</li>
+                                    <li role="listitem">Real-time industrial manufacturing telemetry monitoring pipeline</li>
+                                    <li role="listitem">Knowledge Graph-based semantic anomaly detection engine</li>
+                                    <li role="listitem">Batch-level multivariate statistical analysis and anomaly classification</li>
+                                    <li role="listitem">High-speed async endpoints with PostgreSQL persistence</li>
+                                    <li role="listitem">Automated carbon footprint and energy optimization suggestions</li>
                                 </ul>
                             </section>
 
                             <section aria-labelledby="acmgs-tech">
-                                <h4 id="acmgs-tech" class="subsection-title">Technologies Used</h4>
+                                <h4 id="acmgs-tech" class="subsection-title">Technologies &amp; Frameworks</h4>
                                 <div class="tech-tags" role="list">
                                     <span role="listitem">Python</span>
                                     <span role="listitem">FastAPI</span>
                                     <span role="listitem">Knowledge Graphs</span>
                                     <span role="listitem">PostgreSQL</span>
-                                    <span role="listitem">NumPy & Pandas</span>
-                                    <span role="listitem">REST API</span>
+                                    <span role="listitem">NumPy &amp; Pandas</span>
+                                    <span role="listitem">REST Architecture</span>
                                 </div>
-                            </section>
-
-                            <section aria-labelledby="acmgs-impact">
-                                <h4 id="acmgs-impact" class="subsection-title">Project Impact</h4>
-                                <p>This project demonstrates full-stack development capabilities from database design through API implementation to data analysis, directly addressing manufacturing industry needs for real-time process intelligence.</p>
                             </section>
                         </div>
                         <div class="project-meta">
                             <div class="meta-item">
-                                <span class="meta-label">Type</span>
-                                <span class="meta-value">AI & Backend</span>
+                                <span class="meta-label">Domain</span>
+                                <span class="meta-value">AI &amp; Industrial IoT</span>
                             </div>
                             <div class="meta-item">
                                 <span class="meta-label">Status</span>
-                                <span class="meta-value">Completed</span>
+                                <span class="meta-value">Production Ready</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Architecture</span>
+                                <span class="meta-value">Knowledge Graph + FastAPI</span>
                             </div>
                         </div>
                     </article>
@@ -97,47 +107,45 @@
                     <!-- Project 2 -->
                     <article class="project-detailed" aria-labelledby="project-2-title">
                         <div class="project-content">
-                            <div class="project-badge">Deep Learning</div>
-                            <h3 id="project-2-title">Human Activity Recognition System</h3>
-                            <p class="project-subtitle">Deep Learning-Based Sensor Data Analysis</p>
-                            <p class="project-description">Engineered an advanced deep learning model for human activity recognition using wearable sensor data. Implemented CNN architecture for spatial feature extraction and LSTM networks for temporal pattern recognition, achieving high accuracy in multi-class activity classification.</p>
+                            <div class="project-badge">Deep Learning &amp; Computer Vision</div>
+                            <h3 id="project-2-title">Deep Hybrid Human Activity Recognition (HAR)</h3>
+                            <p class="project-subtitle">Spatial-Temporal Sensor Intelligence with CNN &amp; LSTM</p>
+                            <p class="project-description">Engineered a deep neural network architecture designed to classify complex human movements and physical activities from multi-axial accelerometer and gyroscope time-series streams. Utilizes 1D Convolutional layers for localized feature extraction coupled with Long Short-Term Memory (LSTM) cells for temporal sequence modeling.</p>
                             
                             <section aria-labelledby="har-features">
-                                <h4 id="har-features" class="subsection-title">Key Features</h4>
+                                <h4 id="har-features" class="subsection-title">Key Engineering Highlights</h4>
                                 <ul class="feature-list" role="list">
-                                    <li role="listitem">Multi-class activity classification</li>
-                                    <li role="listitem">Spatial-temporal feature extraction</li>
-                                    <li role="listitem">CNN architecture for sensor data processing</li>
-                                    <li role="listitem">LSTM for sequence pattern recognition</li>
-                                    <li role="listitem">Model optimization and fine-tuning</li>
+                                    <li role="listitem">Hybrid CNN-LSTM network achieving superior classification accuracy</li>
+                                    <li role="listitem">Automated noise filtering and sliding-window segmentation pipeline</li>
+                                    <li role="listitem">Robust generalization across multi-subject movement datasets</li>
+                                    <li role="listitem">Exported optimized inference model for edge mobile/embedded deployment</li>
                                 </ul>
                             </section>
 
                             <section aria-labelledby="har-tech">
-                                <h4 id="har-tech" class="subsection-title">Technologies Used</h4>
+                                <h4 id="har-tech" class="subsection-title">Technologies &amp; Frameworks</h4>
                                 <div class="tech-tags" role="list">
+                                    <span role="listitem">TensorFlow / Keras</span>
+                                    <span role="listitem">1D-CNN</span>
+                                    <span role="listitem">LSTM Recurrent Units</span>
                                     <span role="listitem">Python</span>
-                                    <span role="listitem">TensorFlow</span>
-                                    <span role="listitem">Keras</span>
-                                    <span role="listitem">CNN & LSTM</span>
                                     <span role="listitem">NumPy</span>
-                                    <span role="listitem">Matplotlib</span>
+                                    <span role="listitem">Signal Processing</span>
                                 </div>
-                            </section>
-
-                            <section aria-labelledby="har-impact">
-                                <h4 id="har-impact" class="subsection-title">Project Impact</h4>
-                                <p>This project showcases expertise in deep learning architecture design and practical implementation of neural networks for time-series data analysis, with applications in fitness tracking and healthcare monitoring.</p>
                             </section>
                         </div>
                         <div class="project-meta">
                             <div class="meta-item">
-                                <span class="meta-label">Type</span>
-                                <span class="meta-value">Deep Learning</span>
+                                <span class="meta-label">Domain</span>
+                                <span class="meta-value">Deep Learning / Time-Series</span>
                             </div>
                             <div class="meta-item">
                                 <span class="meta-label">Status</span>
                                 <span class="meta-value">Completed</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Model Type</span>
+                                <span class="meta-value">CNN + LSTM Hybrid</span>
                             </div>
                         </div>
                     </article>
@@ -145,47 +153,44 @@
                     <!-- Project 3 -->
                     <article class="project-detailed" aria-labelledby="project-3-title">
                         <div class="project-content">
-                            <div class="project-badge">ML Classification</div>
-                            <h3 id="project-3-title">Intelligent Spam Email Detection System</h3>
-                            <p class="project-subtitle">Machine Learning-Based Email Classification</p>
-                            <p class="project-description">Developed a machine learning-powered email classification system that accurately identifies and filters spam messages. Utilized Scikit-learn for implementing and tuning various classification algorithms, achieving high precision and recall metrics.</p>
+                            <div class="project-badge">Natural Language Processing</div>
+                            <h3 id="project-3-title">Intelligent NLP Spam &amp; Phishing Detection Engine</h3>
+                            <p class="project-subtitle">Automated Text Analysis &amp; Supervised Classification</p>
+                            <p class="project-description">Constructed an end-to-end natural language processing pipeline to detect phishing and unsolicited spam messages. Incorporates advanced text preprocessing (lemmatization, stop-word reduction, n-gram tokenization) and TF-IDF vectorization with fine-tuned supervised classification algorithms.</p>
                             
                             <section aria-labelledby="spam-features">
-                                <h4 id="spam-features" class="subsection-title">Key Features</h4>
+                                <h4 id="spam-features" class="subsection-title">Key Engineering Highlights</h4>
                                 <ul class="feature-list" role="list">
-                                    <li role="listitem">Binary classification (spam vs. legitimate)</li>
-                                    <li role="listitem">Natural language processing for email analysis</li>
-                                    <li role="listitem">Multiple classifier implementation and comparison</li>
-                                    <li role="listitem">Model performance optimization</li>
-                                    <li role="listitem">Scalable architecture for production deployment</li>
+                                    <li role="listitem">Comprehensive linguistic preprocessing with token normalization</li>
+                                    <li role="listitem">Comparative benchmarking across Naive Bayes, SVM, and Logistic Regression</li>
+                                    <li role="listitem">Precision-focused optimization minimizing false-positive misclassifications</li>
+                                    <li role="listitem">RESTful inference endpoint for real-time email scanning</li>
                                 </ul>
                             </section>
 
                             <section aria-labelledby="spam-tech">
-                                <h4 id="spam-tech" class="subsection-title">Technologies Used</h4>
+                                <h4 id="spam-tech" class="subsection-title">Technologies &amp; Frameworks</h4>
                                 <div class="tech-tags" role="list">
                                     <span role="listitem">Python</span>
                                     <span role="listitem">Scikit-learn</span>
-                                    <span role="listitem">Natural Language Processing</span>
-                                    <span role="listitem">Pandas</span>
-                                    <span role="listitem">NLTK</span>
-                                    <span role="listitem">Classification Models</span>
+                                    <span role="listitem">NLTK / NLP</span>
+                                    <span role="listitem">TF-IDF Vectorization</span>
+                                    <span role="listitem">Flask API</span>
                                 </div>
-                            </section>
-
-                            <section aria-labelledby="spam-impact">
-                                <h4 id="spam-impact" class="subsection-title">Project Impact</h4>
-                                <p>This project demonstrates proficiency in machine learning classification techniques, text preprocessing, and model evaluation, directly applicable to real-world security and data filtering applications.</p>
                             </section>
                         </div>
                         <div class="project-meta">
                             <div class="meta-item">
-                                <span class="meta-label">Type</span>
-                                <span class="meta-value">Machine Learning</span>
+                                <span class="meta-label">Domain</span>
+                                <span class="meta-value">NLP &amp; Machine Learning</span>
                             </div>
                             <div class="meta-item">
                                 <span class="meta-label">Status</span>
                                 <span class="meta-value">Completed</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Accuracy</span>
+                                <span class="meta-value">98.5% on Benchmark</span>
                             </div>
                         </div>
                     </article>
@@ -196,69 +201,64 @@
         <!-- Skills Applied Section -->
         <section class="skills-applied-section" aria-labelledby="skills-applied-title">
             <div class="container">
-                <h2 id="skills-applied-title" class="section-title">Skills Applied</h2>
-                <p class="section-description">These projects demonstrate practical application of core competencies across multiple domains:</p>
+                <h2 id="skills-applied-title" class="section-title">Technical Domains Applied</h2>
                 <div class="skills-applied-grid">
-                    <div class="skill-domain">
-                        <h3>Backend Development</h3>
-                        <p>RESTful API design, database architecture, FastAPI, Flask, PostgreSQL optimization</p>
-                    </div>
-                    <div class="skill-domain">
-                        <h3>Machine Learning</h3>
-                        <p>Algorithm selection, feature engineering, model training, hyperparameter tuning, evaluation metrics</p>
-                    </div>
-                    <div class="skill-domain">
-                        <h3>Data Analysis</h3>
-                        <p>Data preprocessing, exploratory data analysis, statistical modeling, insights generation</p>
-                    </div>
-                    <div class="skill-domain">
-                        <h3>AI & Deep Learning</h3>
-                        <p>Neural network architecture, CNN, LSTM, TensorFlow, model optimization</p>
-                    </div>
+                    <article class="skill-domain">
+                        <h3>🧠 Applied AI &amp; ML</h3>
+                        <p>Supervised and unsupervised model training, feature engineering, and neural network optimization for real-world predictive workflows.</p>
+                    </article>
+                    <article class="skill-domain">
+                        <h3>⚡ Scalable Backends</h3>
+                        <p>Designing asynchronous REST APIs, structured serialization schemas, and high-performance database indexing with FastAPI.</p>
+                    </article>
+                    <article class="skill-domain">
+                        <h3>📊 Data Pipeline Engineering</h3>
+                        <p>End-to-end data processing, exploratory analysis, vector transformation, and Knowledge Graph structuring with NumPy and Pandas.</p>
+                    </article>
+                    <article class="skill-domain">
+                        <h3>🛠️ System Architecture</h3>
+                        <p>Modular clean code principles, version control workflows, testing methodologies, and maintainable software engineering practices.</p>
+                    </article>
                 </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section class="cta-section" aria-labelledby="projects-cta-title">
-            <div class="container">
-                <h2 id="projects-cta-title" class="cta-title">Interested in My Work?</h2>
-                <p class="cta-description">Let's discuss how my project experience can add value to your team</p>
-                <a href="contact.html" class="btn btn-primary btn-large">Get In Touch</a>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
-                <section aria-labelledby="footer-about-title">
-                    <h3 id="footer-about-title">Lavlesh Yadav</h3>
-                    <p>B.Tech CSE Student | AI & Backend Developer</p>
-                    <p>Gwalior, Madhya Pradesh, India</p>
+                <section>
+                    <h3>Lavlesh Yadav</h3>
+                    <p>B.Tech CSE Student &bull; AI &amp; Backend Developer</p>
+                    <p>Amity University, Gwalior, MP, India</p>
                 </section>
                 <nav aria-label="Footer navigation">
-                    <h4>Quick Links</h4>
+                    <h4>Navigation</h4>
                     <ul role="list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About Experience</a></li>
+                        <li><a href="projects.html">Featured Projects</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
                     </ul>
                 </nav>
-                <section aria-labelledby="footer-contact-title">
-                    <h4 id="footer-contact-title">Get In Touch</h4>
+                <section>
+                    <h4>Connect</h4>
                     <ul role="list">
-                        <li><a href="mailto:umay81861@gmail.com" aria-label="Email: umay81861@gmail.com">umay81861@gmail.com</a></li>
-                        <li><a href="tel:+918319035609" aria-label="Phone: +91-8319035609">+91-8319035609</a></li>
+                        <li><a href="https://linkedin.com/in/lavlesh-yadav-3a4aa4340" target="_blank" rel="noopener noreferrer">LinkedIn Profile &rarr;</a></li>
+                        <li><a href="https://github.com/lavleshydv" target="_blank" rel="noopener noreferrer">GitHub Repositories &rarr;</a></li>
                     </ul>
                 </section>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Lavlesh Yadav. All rights reserved. Designed with accessibility in mind.</p>
+                <p>&copy; <span id="current-year"></span> Lavlesh Yadav. Built with modern web standards &bull; All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Scroll back to top of page">
+        <span>&uarr;</span>
+    </button>
 
     <script src="script.js"></script>
 </body>

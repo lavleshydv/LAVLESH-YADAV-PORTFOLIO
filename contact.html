@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Lavlesh Yadav - Get in touch for internship opportunities, collaboration, or inquiries">
-    <meta name="keywords" content="contact, email, Lavlesh Yadav, internship, collaboration">
+    <meta name="description" content="Contact Lavlesh Yadav - Connect for AI & ML internship opportunities, backend engineering, collaboration, or inquiries">
+    <meta name="keywords" content="contact, email, Lavlesh Yadav, internship, collaboration, AI, backend, FastAPI, Gwalior">
     <meta name="author" content="Lavlesh Yadav">
-    <title>Contact - Lavlesh Yadav Portfolio</title>
+    <meta name="theme-color" content="#070a13">
+    <title>Contact Lavlesh Yadav | AI &amp; Backend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%230f172a'%3E💻%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%2300f2fe'%3E⚡%3C/text%3E%3C/svg%3E">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- Interactive Ambient Glows & Background Particle Canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow-2" aria-hidden="true"></div>
+
     <header class="header" role="banner">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container nav-container">
-                <a href="index.html" class="logo" aria-label="Lavlesh Yadav Portfolio">LY</a>
+                <a href="index.html" class="logo" aria-label="Lavlesh Yadav Portfolio">
+                    <span class="logo-badge">LY</span>
+                    <span>LAVLESH</span>
+                </a>
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
                     <span></span>
                     <span></span>
@@ -37,7 +48,7 @@
         <section class="page-header" aria-labelledby="contact-title">
             <div class="container">
                 <h1 id="contact-title">Get In Touch</h1>
-                <p class="page-subtitle">I'd love to hear from you. Let's start a conversation!</p>
+                <p class="page-subtitle">Let's discuss internship opportunities, machine learning projects, or technical collaboration</p>
             </div>
         </section>
 
@@ -45,48 +56,48 @@
         <section class="contact-section" aria-labelledby="contact-intro">
             <div class="container">
                 <div class="contact-grid">
-                    <!-- Contact Info -->
-                    <aside class="contact-info" role="complementary" aria-label="Contact information">
+                    <!-- Contact Info Cards -->
+                    <aside class="contact-info" role="complementary" aria-label="Contact channels">
                         <h2 id="contact-intro">Let's Connect</h2>
-                        <p>Whether you're interested in internship opportunities, collaborating on projects, or just want to chat about technology, I'm here to help. Reach out through any of the methods below.</p>
+                        <p>Whether you're looking for an enthusiastic AI &amp; Backend Engineering intern, exploring collaboration on cutting-edge machine learning projects, or simply want to talk tech — my inbox is always open.</p>
                         
                         <article class="contact-card">
-                            <h3>Email</h3>
+                            <h3>Direct Email</h3>
                             <a href="mailto:umay81861@gmail.com" class="contact-link">
-                                <span class="contact-icon">✉️</span>
+                                <span class="contact-icon" aria-hidden="true">✉️</span>
                                 <span class="sr-only">Send email to</span>
                                 umay81861@gmail.com
                             </a>
-                            <p class="contact-note">I typically respond within 24 hours</p>
+                            <p class="contact-note">Responses typically within 24 hours</p>
                         </article>
 
                         <article class="contact-card">
-                            <h3>Phone</h3>
+                            <h3>Phone / WhatsApp</h3>
                             <a href="tel:+918319035609" class="contact-link">
-                                <span class="contact-icon">📱</span>
+                                <span class="contact-icon" aria-hidden="true">📱</span>
                                 <span class="sr-only">Call</span>
                                 +91-8319035609
                             </a>
-                            <p class="contact-note">Available Monday to Friday, 10 AM - 6 PM IST</p>
+                            <p class="contact-note">Available Mon &ndash; Sat, 10 AM &ndash; 7 PM IST</p>
                         </article>
 
                         <article class="contact-card">
                             <h3>Location</h3>
                             <p class="contact-info-text">
-                                <span class="contact-icon">📍</span>
+                                <span class="contact-icon" aria-hidden="true">📍</span>
                                 Gwalior, Madhya Pradesh, India
                             </p>
                         </article>
 
                         <article class="contact-card">
-                            <h3>Follow Me</h3>
-                            <div class="social-links contact-social" role="list" aria-label="Social media links">
-                                <a href="https://linkedin.com/in/lavlesh-yadav-3a4aa4340" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="LinkedIn">
+                            <h3>Professional Profiles</h3>
+                            <div class="social-links contact-social" role="list" aria-label="Social profiles">
+                                <a href="https://linkedin.com/in/lavlesh-yadav-3a4aa4340" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="LinkedIn profile">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0h.001z"/>
                                     </svg>
                                 </a>
-                                <a href="https://github.com/lavleshydv" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="GitHub">
+                                <a href="https://github.com/lavleshydv" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="GitHub profile">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                     </svg>
@@ -97,108 +108,51 @@
 
                     <!-- Contact Form -->
                     <section class="contact-form-section" aria-labelledby="form-title">
-                        <h2 id="form-title">Send Me a Message</h2>
-                        <form id="contactForm" class="contact-form" method="POST" action="#" novalidate aria-label="Contact form">
+                        <h2 id="form-title">Send a Direct Message</h2>
+                        <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+                        
+                        <form id="contactForm" novalidate>
                             <div class="form-group">
-                                <label for="name" class="form-label">Full Name <span aria-label="required">*</span></label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    class="form-input" 
-                                    placeholder="John Doe"
-                                    required
-                                    aria-required="true"
-                                    aria-describedby="name-help"
-                                >
+                                <label for="name" class="form-label">Full Name <span>*</span></label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required>
                                 <span id="name-help" class="form-help"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="email" class="form-label">Email Address <span aria-label="required">*</span></label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    class="form-input" 
-                                    placeholder="your.email@example.com"
-                                    required
-                                    aria-required="true"
-                                    aria-describedby="email-help"
-                                >
+                                <label for="email" class="form-label">Email Address <span>*</span></label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
                                 <span id="email-help" class="form-help"></span>
                             </div>
 
                             <div class="form-group">
                                 <label for="phone" class="form-label">Phone Number (Optional)</label>
-                                <input 
-                                    type="tel" 
-                                    id="phone" 
-                                    name="phone" 
-                                    class="form-input" 
-                                    placeholder="+91-9876543210"
-                                    aria-describedby="phone-help"
-                                >
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="e.g. +91 98765 43210">
                                 <span id="phone-help" class="form-help"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="subject" class="form-label">Subject <span aria-label="required">*</span></label>
-                                <select 
-                                    id="subject" 
-                                    name="subject" 
-                                    class="form-input" 
-                                    required
-                                    aria-required="true"
-                                    aria-describedby="subject-help"
-                                >
-                                    <option value="">Select a subject</option>
-                                    <option value="internship">Internship Opportunity</option>
-                                    <option value="collaboration">Project Collaboration</option>
-                                    <option value="question">General Inquiry</option>
-                                    <option value="feedback">Feedback</option>
-                                    <option value="other">Other</option>
-                                </select>
+                                <label for="subject" class="form-label">Inquiry Subject <span>*</span></label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Internship Opportunity / Technical Collaboration" required>
                                 <span id="subject-help" class="form-help"></span>
                             </div>
 
                             <div class="form-group">
-                                <label for="message" class="form-label">Message <span aria-label="required">*</span></label>
-                                <textarea 
-                                    id="message" 
-                                    name="message" 
-                                    class="form-textarea" 
-                                    rows="6"
-                                    placeholder="Tell me more about your inquiry..."
-                                    required
-                                    aria-required="true"
-                                    aria-describedby="message-help"
-                                ></textarea>
+                                <label for="message" class="form-label">Message Details <span>*</span></label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Share project details, team requirements, or questions..." required></textarea>
                                 <span id="message-help" class="form-help"></span>
                             </div>
 
                             <div class="form-group form-checkbox">
-                                <input 
-                                    type="checkbox" 
-                                    id="privacy" 
-                                    name="privacy" 
-                                    required
-                                    aria-required="true"
-                                    aria-describedby="privacy-help"
-                                >
-                                <label for="privacy" class="checkbox-label">
-                                    I agree to the privacy policy <span aria-label="required">*</span>
-                                </label>
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy" class="checkbox-label">I agree to send these contact details for correspondence.</label>
                                 <span id="privacy-help" class="form-help"></span>
                             </div>
 
-                            <div id="formStatus" class="form-status" role="alert" aria-live="polite" aria-atomic="true"></div>
-
-                            <button type="submit" class="btn btn-primary btn-large" aria-label="Submit contact form">
-                                Send Message
+                            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">
+                                <span>Send Transmission</span>
+                                <span>⚡</span>
                             </button>
-
-                            <p class="form-note">I'll get back to you as soon as possible. Thank you for reaching out!</p>
+                            <p class="form-note">🔒 Your information is transmitted securely and never shared.</p>
                         </form>
                     </section>
                 </div>
@@ -211,44 +165,21 @@
                 <h2 id="faq-title" class="section-title">Frequently Asked Questions</h2>
                 <div class="faq-grid">
                     <details class="faq-item">
-                        <summary aria-expanded="false">What types of internships are you looking for?</summary>
+                        <summary>What types of internship roles are you interested in?</summary>
                         <div class="faq-content">
-                            <p>I'm actively seeking internship opportunities in AI/ML, Backend Development, and Data Analytics roles. I'm particularly interested in positions where I can work on challenging projects that involve building scalable systems and implementing machine learning solutions.</p>
+                            <p>I am actively seeking roles in AI &amp; Machine Learning Engineering, Backend Software Development (Python / FastAPI / PostgreSQL), and Data Intelligence systems.</p>
                         </div>
                     </details>
-
                     <details class="faq-item">
-                        <summary aria-expanded="false">How quickly will you respond?</summary>
+                        <summary>What is your current availability?</summary>
                         <div class="faq-content">
-                            <p>I typically respond to inquiries within 24 hours on weekdays. For urgent matters, feel free to call me directly at +91-8319035609.</p>
+                            <p>I am available for remote and hybrid internship engagements, with flexible working hours across global time zones.</p>
                         </div>
                     </details>
-
                     <details class="faq-item">
-                        <summary aria-expanded="false">Are you open to remote opportunities?</summary>
+                        <summary>Can you work with distributed/remote teams?</summary>
                         <div class="faq-content">
-                            <p>Yes, I'm open to both remote and on-site opportunities. Remote roles are particularly appealing as they offer flexibility and the chance to work with global teams.</p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary aria-expanded="false">Can I connect with you on social media?</summary>
-                        <div class="faq-content">
-                            <p>Absolutely! You can find me on LinkedIn and GitHub. I'm active on both platforms and enjoy connecting with professionals in the tech community. Feel free to reach out!</p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary aria-expanded="false">What's your availability for starting an internship?</summary>
-                        <div class="faq-content">
-                            <p>I'm flexible with my schedule and can discuss availability based on specific opportunities. I'm currently open to internship positions starting immediately or at mutually agreed dates.</p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary aria-expanded="false">Do you work on freelance projects?</summary>
-                        <div class="faq-content">
-                            <p>While my primary focus is on securing internship opportunities, I'm open to discussing freelance projects that align with my technical interests and available capacity.</p>
+                            <p>Yes! I have extensive experience with asynchronous collaboration, Git/GitHub workflows, API documentation, and agile communication tools.</p>
                         </div>
                     </details>
                 </div>
@@ -256,36 +187,41 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
-                <section aria-labelledby="footer-about-title">
-                    <h3 id="footer-about-title">Lavlesh Yadav</h3>
-                    <p>B.Tech CSE Student | AI & Backend Developer</p>
-                    <p>Gwalior, Madhya Pradesh, India</p>
+                <section>
+                    <h3>Lavlesh Yadav</h3>
+                    <p>B.Tech CSE Student &bull; AI &amp; Backend Developer</p>
+                    <p>Amity University, Gwalior, MP, India</p>
                 </section>
                 <nav aria-label="Footer navigation">
-                    <h4>Quick Links</h4>
+                    <h4>Navigation</h4>
                     <ul role="list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About Experience</a></li>
+                        <li><a href="projects.html">Featured Projects</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
                     </ul>
                 </nav>
-                <section aria-labelledby="footer-contact-title">
-                    <h4 id="footer-contact-title">Get In Touch</h4>
+                <section>
+                    <h4>Connect</h4>
                     <ul role="list">
-                        <li><a href="mailto:umay81861@gmail.com" aria-label="Email: umay81861@gmail.com">umay81861@gmail.com</a></li>
-                        <li><a href="tel:+918319035609" aria-label="Phone: +91-8319035609">+91-8319035609</a></li>
+                        <li><a href="https://linkedin.com/in/lavlesh-yadav-3a4aa4340" target="_blank" rel="noopener noreferrer">LinkedIn Profile &rarr;</a></li>
+                        <li><a href="https://github.com/lavleshydv" target="_blank" rel="noopener noreferrer">GitHub Repositories &rarr;</a></li>
                     </ul>
                 </section>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Lavlesh Yadav. All rights reserved. Designed with accessibility in mind.</p>
+                <p>&copy; <span id="current-year"></span> Lavlesh Yadav. Built with modern web standards &bull; All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Scroll back to top of page">
+        <span>&uarr;</span>
+    </button>
 
     <script src="script.js"></script>
 </body>

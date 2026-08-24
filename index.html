@@ -3,26 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lavlesh Yadav - B.Tech CSE Student specializing in AI, ML, Backend Development, and Data Analytics. Explore my portfolio of projects and technical skills.">
-    <meta name="keywords" content="Lavlesh Yadav, portfolio, AI, Machine Learning, Backend Development, FastAPI, Python">
+    <meta name="description" content="Lavlesh Yadav - B.Tech CSE Student specializing in AI, Machine Learning, Backend Development, and Scalable APIs. Explore interactive projects and technical expertise.">
+    <meta name="keywords" content="Lavlesh Yadav, portfolio, AI, Machine Learning, Backend Development, FastAPI, Python, Deep Learning, Gwalior">
     <meta name="author" content="Lavlesh Yadav">
-    <meta name="theme-color" content="#0f172a">
-    <meta property="og:title" content="Lavlesh Yadav - Portfolio">
-    <meta property="og:description" content="B.Tech CSE Student | AI & ML Enthusiast | Backend Developer">
+    <meta name="theme-color" content="#070a13">
+    <meta property="og:title" content="Lavlesh Yadav - Futuristic Portfolio | AI & Backend Engineer">
+    <meta property="og:description" content="B.Tech CSE Student | AI & ML Enthusiast | FastAPI & Backend Architect">
     <meta property="og:type" content="website">
-    <title>Lavlesh Yadav - Portfolio | AI & Backend Developer</title>
+    <title>Lavlesh Yadav | AI & Backend Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%230f172a'%3E💻%3C/text%3E%3C/svg%3E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='75' font-size='75' fill='%2300f2fe'%3E⚡%3C/text%3E%3C/svg%3E">
 </head>
 <body>
     <!-- Skip to main content link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- Interactive Ambient Glows & Background Particle Canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow-2" aria-hidden="true"></div>
+
+    <!-- ==========================================================================
+         INTERACTIVE ENTRANCE PORTAL (GATEWAY)
+         ========================================================================== -->
+    <section id="introPortal" class="intro-portal" role="dialog" aria-modal="true" aria-label="Welcome Entrance Portal">
+        <div class="portal-rings" aria-hidden="true">
+            <div class="portal-ring portal-ring-1"></div>
+            <div class="portal-ring portal-ring-2"></div>
+            <div class="portal-ring portal-ring-3"></div>
+        </div>
+        <div class="portal-content">
+            <div class="portal-badge">
+                <span class="pulse-dot"></span>
+                SYSTEM ONLINE &bull; PORTFOLIO 2026
+            </div>
+            <h1 class="portal-title">LAVLESH YADAV</h1>
+            <p class="portal-tagline">
+                Exploring <span id="portalTypingText" class="portal-typing-text">AI &amp; Backend Engineering</span>
+            </p>
+            <div class="portal-btn-wrapper">
+                <div class="portal-btn-glow-ring" aria-hidden="true"></div>
+                <button id="enterPortalBtn" class="btn-portal" aria-label="Enter Portfolio and View Details">
+                    <span>Explore Experience</span>
+                    <span class="portal-btn-icon">&rarr;</span>
+                </button>
+            </div>
+            <div class="portal-footer-hint">
+                <span>Press <kbd>Enter</kbd> or click to launch interactive view</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Navigation Header -->
     <header class="header" role="banner">
         <nav class="navbar" role="navigation" aria-label="Main navigation">
             <div class="container nav-container">
-                <a href="index.html" class="logo" aria-current="page">LY</a>
+                <a href="index.html" class="logo" aria-current="page">
+                    <span class="logo-badge">LY</span>
+                    <span>LAVLESH</span>
+                </a>
+                <div class="nav-actions">
+                    <button class="btn-replay-intro" id="replayIntroBtn" aria-label="Replay Entrance Experience">
+                        <span>✨ Replay Intro</span>
+                    </button>
+                </div>
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
                     <span></span>
                     <span></span>
@@ -44,12 +90,26 @@
         <section class="hero" aria-labelledby="hero-title">
             <div class="container">
                 <div class="hero-content">
+                    <div class="hero-status-pill">
+                        <span class="pulse-dot"></span>
+                        Available for Internship &amp; Project Collaborations
+                    </div>
                     <h1 id="hero-title" class="hero-title">Lavlesh Yadav</h1>
-                    <p class="hero-subtitle">B.Tech CSE Student | AI & ML Enthusiast | Backend Developer</p>
-                    <p class="hero-description">Crafting intelligent solutions with modern technology. Specializing in AI-powered applications, backend APIs, and data-driven systems.</p>
+                    <div class="hero-subtitle-wrapper">
+                        <span>Architecting</span>
+                        <span id="heroTypingText" class="hero-dynamic-text">AI &amp; ML Solutions</span>
+                    </div>
+                    <p class="hero-description">
+                        B.Tech CSE student at Amity University with a strong passion for Artificial Intelligence, Machine Learning, and robust Backend Architectures. Designing intelligent, scalable digital systems for real-world impact.
+                    </p>
                     <div class="hero-cta">
-                        <a href="projects.html" class="btn btn-primary" aria-label="View my projects">View My Work</a>
-                        <a href="contact.html" class="btn btn-secondary" aria-label="Contact me">Get In Touch</a>
+                        <a href="projects.html" class="btn btn-primary" aria-label="View all my featured projects">
+                            <span>Explore My Work</span>
+                            <span>&rarr;</span>
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary" aria-label="Get in touch with Lavlesh">
+                            <span>Get In Touch</span>
+                        </a>
                     </div>
                     <div class="social-links" role="list" aria-label="Social media links">
                         <a href="https://linkedin.com/in/lavlesh-yadav-3a4aa4340" target="_blank" rel="noopener noreferrer" class="social-link" role="listitem" aria-label="LinkedIn profile">
@@ -64,7 +124,7 @@
                                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                             </svg>
                         </a>
-                        <a href="mailto:umay81861@gmail.com" class="social-link" role="listitem" aria-label="Email me">
+                        <a href="mailto:umay81861@gmail.com" class="social-link" role="listitem" aria-label="Email me directly">
                             <span class="sr-only">Email</span>
                             <svg viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
@@ -72,12 +132,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="hero-visual" aria-label="Profile illustration">
-                    <img
-                        src="assets/profile.jpg"
-                        alt="Lavlesh Yadav portrait"
-                        class="hero-photo"
-                    >
+                <div class="hero-visual" aria-label="Profile portrait with interactive floating badges">
+                    <div class="hero-photo-wrapper">
+                        <div class="photo-glow-ring" aria-hidden="true"></div>
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Lavlesh Yadav portrait"
+                            class="hero-photo"
+                        >
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -86,42 +150,43 @@
         <section class="skills-preview" aria-labelledby="skills-title">
             <div class="container">
                 <h2 id="skills-title" class="section-title">Core Competencies</h2>
+                <p class="section-description">A balanced repertoire of machine learning engineering, backend development, and mathematical computing.</p>
                 <div class="skills-grid">
                     <article class="skill-card">
-                        <h3>Languages</h3>
+                        <h3>💻 Languages</h3>
                         <ul role="list" aria-label="Programming languages">
-                            <li>Python</li>
-                            <li>C++</li>
-                            <li>SQL</li>
+                            <li>Python (Advanced)</li>
+                            <li>C++ (Data Structures &amp; Algo)</li>
+                            <li>SQL &amp; Query Optimization</li>
                         </ul>
                     </article>
                     <article class="skill-card">
-                        <h3>Backend</h3>
+                        <h3>⚡ Backend &amp; APIs</h3>
                         <ul role="list" aria-label="Backend technologies">
-                            <li>FastAPI</li>
-                            <li>Flask</li>
-                            <li>PostgreSQL</li>
+                            <li>FastAPI &amp; Asynchronous APIs</li>
+                            <li>Flask &amp; RESTful Services</li>
+                            <li>PostgreSQL &amp; Database Design</li>
                         </ul>
                     </article>
                     <article class="skill-card">
-                        <h3>AI & ML</h3>
+                        <h3>🧠 AI &amp; Deep Learning</h3>
                         <ul role="list" aria-label="Machine learning tools">
-                            <li>Scikit-learn</li>
-                            <li>TensorFlow</li>
-                            <li>LSTM & CNN</li>
+                            <li>Scikit-learn &amp; Predictive ML</li>
+                            <li>TensorFlow &amp; Neural Nets</li>
+                            <li>LSTM &amp; CNN Architectures</li>
                         </ul>
                     </article>
                     <article class="skill-card">
-                        <h3>Tools & DevOps</h3>
+                        <h3>🛠️ Tools &amp; Analytics</h3>
                         <ul role="list" aria-label="Development tools">
-                            <li>Git & GitHub</li>
-                            <li>VS Code</li>
-                            <li>NumPy & Pandas</li>
+                            <li>Git &amp; GitHub Version Control</li>
+                            <li>NumPy, Pandas &amp; Data Pipeline</li>
+                            <li>VS Code &amp; Linux Environments</li>
                         </ul>
                     </article>
                 </div>
                 <div class="section-cta">
-                    <a href="about.html" class="link-arrow">Learn more about my expertise</a>
+                    <a href="about.html" class="link-arrow">View In-Depth Technical Proficiency</a>
                 </div>
             </div>
         </section>
@@ -129,47 +194,56 @@
         <!-- Featured Projects Section -->
         <section class="featured-projects" aria-labelledby="featured-title">
             <div class="container">
-                <h2 id="featured-title" class="section-title">Featured Projects</h2>
+                <h2 id="featured-title" class="section-title">Featured Innovations</h2>
+                <p class="section-description">Selected projects highlighting knowledge graphs, deep learning, and scalable API design.</p>
                 <div class="projects-grid">
                     <article class="project-card">
                         <div class="project-header">
-                            <h3>Autonomous Carbon-Aware Manufacturing</h3>
-                            <span class="badge">AI & Analytics</span>
+                            <h3>Autonomous Carbon-Aware Manufacturing (ACMGS)</h3>
+                            <span class="badge">AI &amp; Analytics</span>
                         </div>
-                        <p>AI-powered manufacturing monitoring system with anomaly detection using knowledge graph architecture and REST APIs.</p>
+                        <p>AI-driven industrial manufacturing monitoring platform with real-time anomaly detection using Knowledge Graph architecture and FastAPI endpoints.</p>
                         <div class="tech-tags" role="list" aria-label="Technologies used">
                             <span role="listitem">Python</span>
                             <span role="listitem">FastAPI</span>
                             <span role="listitem">Knowledge Graph</span>
+                            <span role="listitem">PostgreSQL</span>
                         </div>
                     </article>
+
                     <article class="project-card">
                         <div class="project-header">
-                            <h3>Human Activity Recognition</h3>
+                            <h3>Human Activity Recognition System</h3>
                             <span class="badge">Deep Learning</span>
                         </div>
-                        <p>Deep learning model for human activity recognition using CNN and LSTM for spatial and temporal feature extraction.</p>
+                        <p>Hybrid Deep Learning model combining CNNs for spatial feature extraction with LSTMs for sequential temporal pattern recognition across sensor streams.</p>
                         <div class="tech-tags" role="list" aria-label="Technologies used">
                             <span role="listitem">CNN</span>
                             <span role="listitem">LSTM</span>
+                            <span role="listitem">TensorFlow</span>
                             <span role="listitem">Python</span>
                         </div>
                     </article>
+
                     <article class="project-card">
                         <div class="project-header">
-                            <h3>Spam Email Detection</h3>
-                            <span class="badge">ML Classification</span>
+                            <h3>Intelligent Spam Email Detection</h3>
+                            <span class="badge">ML &amp; NLP</span>
                         </div>
-                        <p>Machine learning-based spam email classifier using Scikit-learn for text analysis and classification.</p>
+                        <p>NLP-powered machine learning classifier utilizing TF-IDF tokenization and optimized ensemble models to filter unwanted transmissions with high accuracy.</p>
                         <div class="tech-tags" role="list" aria-label="Technologies used">
                             <span role="listitem">Scikit-learn</span>
                             <span role="listitem">NLP</span>
                             <span role="listitem">Python</span>
+                            <span role="listitem">Data Science</span>
                         </div>
                     </article>
                 </div>
                 <div class="section-cta">
-                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                    <a href="projects.html" class="btn btn-primary">
+                        <span>View All Projects &amp; Architecture</span>
+                        <span>&rarr;</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -177,9 +251,12 @@
         <!-- CTA Section -->
         <section class="cta-section" aria-labelledby="cta-title">
             <div class="container">
-                <h2 id="cta-title" class="cta-title">Let's Build Something Amazing</h2>
-                <p class="cta-description">I'm actively seeking internship opportunities to apply my skills in real-world projects. Let's connect!</p>
-                <a href="contact.html" class="btn btn-primary btn-large">Start a Conversation</a>
+                <h2 id="cta-title" class="cta-title">Let's Build Something Exceptional</h2>
+                <p class="cta-description">I'm actively seeking internship opportunities and collaborative technical challenges. Let's start a conversation!</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    <span>Start a Conversation</span>
+                    <span>&rarr;</span>
+                </a>
             </div>
         </section>
     </main>
@@ -190,31 +267,37 @@
             <div class="footer-content">
                 <section aria-labelledby="footer-about-title">
                     <h3 id="footer-about-title">Lavlesh Yadav</h3>
-                    <p>B.Tech CSE Student | AI & Backend Developer</p>
-                    <p>Gwalior, Madhya Pradesh, India</p>
+                    <p>B.Tech CSE Student &bull; AI &amp; Backend Developer</p>
+                    <p>Amity University, Gwalior, Madhya Pradesh, India</p>
                 </section>
                 <nav aria-label="Footer navigation">
                     <h4>Quick Links</h4>
                     <ul role="list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About Experience</a></li>
+                        <li><a href="projects.html">Featured Projects</a></li>
+                        <li><a href="contact.html">Get in Touch</a></li>
                     </ul>
                 </nav>
-                <section aria-labelledby="footer-contact-title">
-                    <h4 id="footer-contact-title">Get In Touch</h4>
+                <section aria-labelledby="footer-social-title">
+                    <h4 id="footer-social-title">Connect</h4>
                     <ul role="list">
-                        <li><a href="mailto:umay81861@gmail.com" aria-label="Email: umay81861@gmail.com">umay81861@gmail.com</a></li>
-                        <li><a href="tel:+918319035609" aria-label="Phone: +91-8319035609">+91-8319035609</a></li>
+                        <li><a href="https://linkedin.com/in/lavlesh-yadav-3a4aa4340" target="_blank" rel="noopener noreferrer">LinkedIn Profile &rarr;</a></li>
+                        <li><a href="https://github.com/lavleshydv" target="_blank" rel="noopener noreferrer">GitHub Repositories &rarr;</a></li>
+                        <li><a href="mailto:umay81861@gmail.com">umay81861@gmail.com</a></li>
                     </ul>
                 </section>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="current-year"></span> Lavlesh Yadav. All rights reserved. Designed with accessibility in mind.</p>
+                <p>&copy; <span id="current-year"></span> Lavlesh Yadav. Built with modern web standards &bull; All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Scroll back to top of page">
+        <span>&uarr;</span>
+    </button>
 
     <script src="script.js"></script>
 </body>
